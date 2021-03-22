@@ -92,6 +92,7 @@
 /* SAI Transmit/Receive Control Register */
 #define FSL_SAI_CSR_TERE	BIT(31)
 #define FSL_SAI_CSR_SE		BIT(30)
+#define FSL_SAI_CSR_BCE		BIT(28)
 #define FSL_SAI_CSR_FR		BIT(25)
 #define FSL_SAI_CSR_SR		BIT(24)
 #define FSL_SAI_CSR_xF_SHIFT	16
@@ -235,6 +236,8 @@ struct fsl_sai_soc_data {
 	unsigned int flags;
 	unsigned int max_register;
 	unsigned int max_burst[2];
+	/* Set to 1 if the SAI gates MCLK to the output pin with BCE */
+	bool mclk_gated_by_bce;
 };
 
 /**
