@@ -3162,6 +3162,7 @@ static const struct panel_desc logictechno_lt161010_2nh = {
 		.width = 154,
 		.height = 86,
 	},
+	.bpc = 6,
 	.bus_format = MEDIA_BUS_FMT_RGB666_1X18,
 	.bus_flags = DRM_BUS_FLAG_DE_HIGH |
 		     DRM_BUS_FLAG_PIXDATA_SAMPLE_NEGEDGE |
@@ -3191,6 +3192,7 @@ static const struct panel_desc logictechno_lt170410_2whc = {
 		.width = 217,
 		.height = 136,
 	},
+	.bpc = 8,
 	.bus_format = MEDIA_BUS_FMT_RGB888_1X7X4_SPWG,
 	.bus_flags = DRM_BUS_FLAG_DE_HIGH,
 	.connector_type = DRM_MODE_CONNECTOR_LVDS,
