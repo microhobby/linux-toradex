@@ -70,6 +70,7 @@
 /* On-module Wi-Fi */
 &usdhc1 {
 	bus-width = <4>;
+	fsl,sdio-async-interrupt-enabled;
 	keep-power-in-suspend;
 	max-frequency = <100000000>;
 	non-removable;
