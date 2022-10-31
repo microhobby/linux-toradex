@@ -83,6 +83,7 @@
 /* On-module Wi-Fi */
 &usdhc3 {
 	bus-width = <4>;
+	fsl,sdio-async-interrupt-enabled;
 	keep-power-in-suspend;
 	non-removable;
 	pinctrl-names = "default", "state_100mhz", "state_200mhz";
