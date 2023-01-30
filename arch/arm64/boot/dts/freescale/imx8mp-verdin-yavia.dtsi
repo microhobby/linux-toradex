@@ -150,6 +150,10 @@
 	status = "okay";
 };
 
+&sdma2 {
+	status = "okay";
+};
+
 /* Verdin UART_2 */
 &uart2 {
 	status = "okay";
